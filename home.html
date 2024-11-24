@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 15px 20px;
+      background: #3498db;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #2ecc71;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to LEGACY Fun Zone!</h1>
+    <div class="button-container">
+      <a href="quote.html" class="btn">Quotes</a>
+      <a href="number.html" class="btn">Guess Number</a>
+      <a href="ttt.html" class="btn">Tic Tac Toe</a>
+      <a href="clock.html" class="btn">Clock</a>
+      <a href="balls.html" class="btn">Bouncing Balls</a>
+      <a href="haki.html" class="btn">LEGACY XER</a>
+    </div>
+  </div>
+</body>
+</html>
